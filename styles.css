@@ -1,0 +1,92 @@
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+
+.container {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+}
+
+
+.display {
+    background: #333;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: right;
+    font-size: 2em;
+    margin-bottom: 15px;
+    overflow-x: auto;
+}
+
+
+.btns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+
+button {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #666;
+}
+
+button:active {
+    background: #888;
+}
+
+
+button[value="AC"] {
+    background: #e74c3c;
+}
+
+button[value="AC"]:hover {
+    background: #c0392b;
+}
+
+button[value="="] {
+    background: #2ecc71;
+}
+
+button[value="="]:hover {
+    background: #27ae60;
+}
+
+button[value="+"],
+button[value="-"],
+button[value="*"],
+button[value="/"],
+button[value="%"] {
+    background: #f39c12;
+}
+
+button[value="+"]:hover,
+button[value="-"]:hover,
+button[value="*"]:hover,
+button[value="/"]:hover,
+button[value="%"]:hover {
+    background: #e67e22;
+}

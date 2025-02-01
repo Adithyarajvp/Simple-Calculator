@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css"/>
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="display">
+            <h2 id="output">0</h2>
+        </div>
+        <div class="btns">
+            <button onclick="handleClick(event)" value="AC">AC</button>
+            <button onclick="handleBackspace()">⌫</button>
+            <button onclick="handleClick(event)" value="%">%</button>
+            <button onclick="handleClick(event)" value="/">÷</button>
+            <button onclick="handleClick(event)" value="7">7</button>
+            <button onclick="handleClick(event)" value="8">8</button>
+            <button onclick="handleClick(event)" value="9">9</button>
+            <button onclick="handleClick(event)" value="*">x</button>
+            <button onclick="handleClick(event)" value="4">4</button>
+            <button onclick="handleClick(event)" value="5">5</button>
+            <button onclick="handleClick(event)" value="6">6</button>
+            <button onclick="handleClick(event)" value="-">-</button>
+            <button onclick="handleClick(event)" value="1">1</button>
+            <button onclick="handleClick(event)" value="2">2</button>
+            <button onclick="handleClick(event)" value="3">3</button>
+            <button onclick="handleClick(event)" value="+">+</button>
+            <button onclick="handleClick(event)" value="0">0</button>
+            <button onclick="handleClick(event)" value=".">.</button>
+            <button onclick="calculateResult()">=</button>
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
